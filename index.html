@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Traité des hernies – Pierre Franco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="site-header">
+    <h1 class="site-title">Traité des hernies – Pierre Franco</h1>
+</header>
+
+<!-- -------------------------------------------------
+     WRAPPER : contiendra le SIDEBAR + le CONTENT
+--------------------------------------------------- -->
+<div class="wrapper">
+
+    <!-- ====================  SIDEBAR  ==================== -->
+    <aside class="sidebar">
+
+        <!-- Boutons « Barbie » (exemple) -->
+        <a class="btn btn--primary" href="projet.html">Le projet en détail</a>
+        <a class="btn btn--primary" href="downloads.html">Liens vers les documents</a>
+
+        <!-- MENU LATÉRAL -->
+        <nav class="nav">
+            <h2 class="nav__title">Chapitres</h2>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__link" data-target="chap_0">
+                        Chapitre 78 – Position de l’enfant
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-target="chap_1">
+                        Chapitre 79 – Deux enfants, l’un mort, l’autre vivant
+                    </button>
+                </li>
+                <!-- … répéter pour chaque chapitre … -->
+            </ul>
+        </nav>
+
+        <!-- DROPDOWN (facultatif) -->
+        <div class="chapter-select">
+            <label for="chapterDropdown" class="visually-hidden">Choisir un chapitre</label>
+            <select id="chapterDropdown">
+                <option value="">-- Sélectionner un chapitre --</option>
+                <!-- les options seront injectées par script.js -->
+            </select>
+        </div>
+    </aside>
+
+    <!-- ====================  MAIN CONTENT  ==================== -->
+    <main class="content" id="content">
+
+        <!-- Tous les chapitres existent ici, mais sont masqués.
+             Le script ajoute la classe .active au bon chapitre. -->
+        <article class="chapter" id="chap_0">
+            <h1>Chapitre 78 – Position de l’enfant</h1>
+            <p><!-- texte du chapitre – à copier depuis votre source --></p>
+        </article>
+
+        <article class="chapter" id="chap_1">
+            <h1>Chapitre 79 – Deux enfants, l’un mort, l’autre vivant</h1>
+            <p><!-- texte du chapitre – à copier depuis votre source --></p>
+        </article>
+
+        <!-- … autres chapitres … -->
+    </main>
+
+</div> <!-- /.wrapper -->
+
+<footer class="site-footer">
+    <p>&copy; 2026 – Pierre Franco – Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
